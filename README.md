@@ -37,6 +37,7 @@ Writeups de práctica personal en TryHackMe, organizados por dificultad. Este ap
 | **Introduction to Phishing (SOC Simulator)** | `TryHackMe/Easy/Introduction-to-Phishing/Introduction_to_Phishing.md` | 🟢 Easy | Triage de 5 alertas de phishing en un simulador SOC, aplicando la metodología de las 5 Ws (Who, What, When, Where, Why) para diferenciar falsos positivos de verdaderos positivos, evaluación de escalación según impacto real (bloqueo por firewall vs. conexión permitida) y mapeo de la evidencia a técnicas MITRE ATT&CK. | Simulador SOC, TryDetectThis |
 | **Payload (AI Supply Chain Security)** | `TryHackMe/Easy/Payload/Payload-TryHackMe.pdf` | 🟢 Easy | Investigación de un incidente de supply chain sobre un pipeline de ML: análisis de logs de despliegue, decompilación segura de un modelo pickle con backdoor (`os.system` vía beaconing HTTP) e inspección de un modelo `.h5` candidato con una capa `Lambda` maliciosa aún sin desplegar. | pickletools, fickling, modelscan, inspect_h5_model.py |
 | **Snapped Phish-ing Line** | `TryHackMe/Easy/Snapped_Phish-ing_Line/Snapped_Phish-ing_Line-TryHackMe.pdf` | 🟢 Easy | Investigación de una campaña de phishing contra una empresa financiera: análisis de correos y de un adjunto HTML que redirige a un portal falso de Office 365, descarga y análisis de un phishing kit expuesto por *directory listing*, validación del hash SHA256 en VirusTotal, revisión del código PHP de exfiltración (`submit.php`), lectura de los logs de credenciales robadas y extracción de IOCs. | Thunderbird, sha256sum, VirusTotal, CyberChef |
+| **Portal Drop** | `TryHackMe/Easy/Portal_Drop/Portal_Drop-TryHackMe.pdf` | 🟢 Easy | Investigación de una intrusión al portal CRM de TryPatchMe: correlación de logs de acceso web y consola EDR para reconstruir un ataque de fuerza bruta, subida de una web shell PHP (`invoice.php`), ejecución remota de comandos vía PHP-FPM, reverse shell como `www-data`, lectura de configuración sensible y exfiltración de la base de datos (MITRE T1505.003). | grep, CyberChef, EDR/XDR Console, awk |
 
 *(Otras plataformas como LetsDefend se agregarán aquí a medida que se completen retos)*
 
@@ -53,6 +54,8 @@ Writeups de práctica personal en TryHackMe, organizados por dificultad. Este ap
 | **Inteligencia de Amenazas** | VirusTotal | <https://www.virustotal.com/> |
 | **Decodificación y Transformación de Datos** | CyberChef | <https://gchq.github.io/CyberChef/> |
 | **Análisis de Phishing Kits** | sha256sum, unzip, revisión manual de código PHP | — |
+| **Análisis de Logs Web** | grep / awk | — |
+| **EDR/XDR** | TryDetectMe XDR (simulador TryHackMe) | — |
 
 ---
 
