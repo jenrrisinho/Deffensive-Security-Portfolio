@@ -49,6 +49,7 @@ Writeups de Blue Team CTF Challenges de [CyberDefenders](https://cyberdefenders.
 | Reto | Documento | Dificultad | Descripción breve | Herramientas |
 |---|---|---|---|---|
 | **[JetBrains](https://cyberdefenders.org/blueteam-ctf-challenges/jetbrains/)** | [JetBrains-CyberDefenders.pdf](CyberDefenders/Easy/JetBrains/JetBrains-CyberDefenders.pdf) | 🟢 Easy | Network Forensics: análisis de una captura de tráfico de un servidor TeamCity comprometido para reconstruir la cadena de ataque (acceso inicial, webshell, ejecución de comandos y escape al host) y mapear las técnicas a MITRE ATT&CK. | Wireshark, MITRE ATT&CK |
+| **[RetailBreach](https://cyberdefenders.org/blueteam-ctf-challenges/retailbreach/)** | [RetailBreach-CyberDefenders.pdf](CyberDefenders/Easy/RetailBreach/RetailBreach-CyberDefenders.pdf) | 🟢 Easy | Network Forensics: análisis de una captura de tráfico de una tienda en línea comprometida, desde el reconocimiento con fuerza bruta de directorios hasta el robo de sesión de un administrador vía XSS almacenado y explotación de un path traversal. | Wireshark |
 
 *(Otras plataformas como LetsDefend se agregarán aquí a medida que se completen retos)*
 
